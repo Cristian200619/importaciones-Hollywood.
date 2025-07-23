@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importaciones HOLLYWOOD</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: # F4F4F4F4;
+        }
+
+        header {
+            background-color: #000220;
+            color: blue;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: BLUE;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://images.steamusercontent.com/ugc/1770458235284558757/E8982C993D8DB2050B491186BB8F8171686CC44E/?imw=5000&imh=5000&ima=fit&i mpolicy=Letterbox&imcolor=%23000000&letterbox=false">');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 5px  black;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+
+        }
+
+        .car {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .car:hover {
+            transform: scale(1.02);
+        }
+
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-details {
+
+            padding: 20px;
+        }
+
+        .car-details h3 {
+            margin: 0 0 10px;
+        }
+
+        .car-details p {
+            color: #555;
+        }
+
+        .contact-btn {
+            display: block;
+            width: max-content;
+            margin: 30px auto 0;
+            padding: 12px 30px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HOLLYWOOD</h1>
+    <nav>
+        <a href="#autos">Autos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Si corres, yo corro</h2>
+</section>
+
+
+<section class="container" id="autos">
+    <h2>Modelos Destacados</h2>
+    <div class="car-grid">
+        <div class="car">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2016-03-01_Geneva_Motor_Show_0992.JPG/640px-2016-03-01_Geneva_Motor_Show_0992.JPG">
+            <div class="car-details">
+                <h3>lykan hypersport</h3>
+                <p>motor bóxer biturbo de 6 cilindros y 3.7 litros (3746 cc).</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="https://cfwww.hgreg.com/photos/by-size/910806S/3648x2048/content.homenetiol.com_2001243_2130496_0x0_85d6ea7f3c5347ad9da6b72d2b760a78.jpg" 
+
+alt="Lamborghini Aventador">
+            <div class="car-details">
+                <h3>Lamborghini Aventador SVJ</h3>
+                <p>V12, 770 hp, diseño extremo y aerodinámico.</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src= 'https://www.autonocion.com/wp-content/uploads/2021/05/Toyota-Supra-de-Fast-Furious-1-930x620.jpg'>
+
+            <div class="car-details">
+                <h3>Toyota Supra Mk4</h3>
+                <p>motor 2jz 6 cilindros en línea de 3.0 litros doble turbocompresor</p>
+            </div>
+        </div>
+    </div>
+	<div class="car">
+            <img src= 'https://www.rolls-roycemotorcarsranchomirage.com/static/dealer-12176/2023-Rolls-Royce-Phantom-Series-II16.jpeg'>
+
+            <div class="car-details">
+                <h3>Rolls-Royce-Phantom-Series-II16</h3>
+                <p>motor v12 biturbo, acabados de madera .</p>
+            </div>
+        </div>
+    </div>
+<div class="car">
+            <img src= 'https://www.ilusso.com/wp-content/uploads/bottompagepic-9.jpg'>
+
+            <div class="car-details">
+                <h3>porsche 911 gt3 rs</h3>
+                <p>Motor bóxer de seis cilindros y 4.0 litros, con altas revoluciones y una potencia de 375 kW (510 CV).</p>
+            </div>
+        </div>
+    </div>
+
+    <a class="contact-btn" href="#contacto">Contáctanos</a>
+</section>
+
+<section class="container" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Interesado en uno de nuestros modelos? Llena el formulario o escríbenos a <strong>importacionesholliwood.com</strong>.</p>
+    <form>
+        <input type="text" placeholder="Nombre completo" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+        <input type="email" placeholder="Correo electrónico" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+        <textarea placeholder="Escribe tu mensaje..." required style="width: 100%; 
+
+padding: 10px; margin: 10px 0;"></textarea><br>
+        <button type="submit" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer;">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 	HOLLIWOOD. Todos los derechos reservados de Cristian y Estuardo.</p>
+</footer>
+
+</body>
+</html>
